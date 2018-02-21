@@ -73,6 +73,18 @@ public class DrawDemo
             pen.turn(-120);
         }
     }
+    
+    /**
+     * Dibuja un pentagono verde.
+     */
+    public void drawPentagon() {
+        Pen pen = new Pen(200,200,myCanvas);
+        pen.setColor(Color.green);
+        for(int i = 0; i < 5; i++){
+            pen.move(80);
+            pen.turn(72);
+        }
+    }
 
     /**
      * Draw some random squiggles on the screen, in random colors.
