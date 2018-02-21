@@ -59,6 +59,20 @@ public class DrawDemo
             pen.turn(90);
         }
     }
+    
+    /**
+     * Dibuja un triangulo verde en las coordenadas pasadas como parametro.
+     * @param xPos Distancia con respecto al borde lateral izquiero del lienzo.
+     * @param yPos Distancia con respecto al borde superior del lienzo.
+     */
+    public void drawTriangle(int xPos, int yPos) {
+        Pen pen = new Pen(xPos,yPos,myCanvas);
+        pen.setColor(Color.green);
+        for(int i = 0; i < 3; i++) {
+            pen.move(100);
+            pen.turn(-120);
+        }
+    }
 
     /**
      * Draw some random squiggles on the screen, in random colors.
