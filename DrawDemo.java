@@ -85,7 +85,19 @@ public class DrawDemo
             pen.turn(72);
         }
     }
-
+    
+    /**
+     * Dibuja un poligono regular de n lados.
+     * param lados El numero de lados del poligono.
+     */
+    public void drawPolygon(int lados){
+        Pen pen = new Pen(125,100,myCanvas);
+        for(int i = 0; i < lados; i++){
+            pen.move(70);
+            pen.turn(360/lados);
+        }
+    }
+    
     /**
      * Draw some random squiggles on the screen, in random colors.
      */
