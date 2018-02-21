@@ -99,6 +99,19 @@ public class DrawDemo
     }
     
     /**
+     * Dibujar espiral
+     */
+    public void drawSpiral() {
+        Pen pen = new Pen(30,30,myCanvas);
+        int lin = 300;
+        for(int i = 1; lin != 5; i++) {
+            pen.move(lin);
+            pen.turn(90);
+            lin -= 5; 
+        }
+    }
+
+    /**
      * Draw some random squiggles on the screen, in random colors.
      */
     public void colorScribble()
